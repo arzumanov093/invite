@@ -78,6 +78,10 @@ p {
 	height: auto;
 }
 
+.main__photo:first-child {
+	margin-top: 70px;
+}
+
 .main__photo img {
 	display: block;
 	position: relative;
@@ -86,23 +90,23 @@ p {
 }
 
 #photo-first {
-	z-index: 4;
+	z-index: 5;
 	box-shadow: 0 10px 10px rgb(27, 19, 19);
 }
 
 #photo-second {
-	z-index: 3;
+	z-index: 4;
 	box-shadow: 0 10px 10px rgb(27, 19, 19);
 }
 
 #photo-third {
-	z-index: 2;
+	z-index: 3;
 	box-shadow: 0 10px 10px rgb(27, 19, 19);
 }
 
 #photo-fourth {
 	z-index: 2;
-	box-shadow: 0 -10px 10px rgb(27, 19, 19);
+	box-shadow: 0 10px 10px rgb(27, 19, 19);
 }
 
 .main__text {
@@ -117,6 +121,7 @@ p {
 	bottom: 13%;
 	color: #02413b;
 	text-align: left;
+	text-shadow: 0px 0px 20px #fff;
 }
 
 .main__text-second {
@@ -150,9 +155,10 @@ p {
 }
 
 .main__text-seventh {
-	bottom: 3%;
+	bottom: 15%;
 	right: 3%;
 	text-align: right;
+	text-shadow: 0px 0px 10px #000;
 }
 
 /* 
@@ -163,7 +169,10 @@ p {
 
 .timer {
 	width: 1080px;
-	position: relative;
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	box-shadow: 0 -10px 10px rgb(27, 19, 19);
 }
 
 .timer__bg {
@@ -182,6 +191,11 @@ p {
 	margin: 0 auto;
 	padding: 15px 0;
 	color: #fcd343;
+}
+
+.timer__title {
+	margin: 0 auto;
+	padding: 0 0 20px;
 }
 
 .timer__body {
@@ -233,6 +247,10 @@ p {
 	.timer,
 	.main__photo img {
 		width: calc(320px + (1080 - 320) * ((100vw - 320px) / (1080 - 320)));
+	}
+
+	.main__text-seventh {
+		bottom: calc(22% + (15 - 22) * ((100vw - 320px) / (1080 - 320)));
 	}
 }
 
