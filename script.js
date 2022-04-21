@@ -30,6 +30,6 @@ var countDownFunction = setInterval(() => {
 
 		var timerBody = document.querySelector('.timer__body');
 		timerBody.innerHTML = 'The wedding has begun!';
-		timerBody.style.padding = '20px 0';
+		timerBody.style.padding = '7px 0';
 	}
 }, 1000)
