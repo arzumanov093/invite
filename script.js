@@ -1,3 +1,11 @@
+window.onload = function () {
+	const container = document.querySelector('.container');
+
+	container.classList.remove('sceleton');
+}
+
+
+
 var countDownDate = new Date('Jul 30, 2022 16:00:00').getTime();
 
 var countDownFunction = setInterval(() => {
@@ -15,10 +23,6 @@ var countDownFunction = setInterval(() => {
 
 	if (distance < 0) {
 		clearInterval(countDownFunction);
-		// document.querySelector('.days').innerHTML = '0';
-		// document.querySelector('.hours').innerHTML = '0';
-		// document.querySelector('.minutes').innerHTML = '0';
-		// document.querySelector('.seconds').innerHTML = '0';
 		var timerItem = document.querySelectorAll('.timer__item');
 		timerItem.forEach(item => {
 			item.classList.add('hide');

@@ -26,6 +26,10 @@ p {
 	color: #fff;
 }
 
+.sceleton {
+	opacity: 0;
+}
+
 /* 
 ===========
 	HEADER
