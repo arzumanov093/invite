@@ -1,10 +1,3 @@
-window.onload = function () {
-	const container = document.querySelector('.container');
-
-	container.classList.remove('sceleton');
-}
-
-
 
 var countDownDate = new Date('Jul 30, 2022 16:00:00').getTime();
 
@@ -37,3 +30,14 @@ var countDownFunction = setInterval(() => {
 		timerBody.style.padding = '7px 0';
 	}
 }, 1000)
+
+
+
+
+
+
+
+
+
+
+

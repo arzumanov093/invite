@@ -24,10 +24,52 @@ p {
 	box-sizing: border-box;
 	font-size: 40px;
 	color: #fff;
+	opacity: 1;
 }
 
 .sceleton {
 	opacity: 0;
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	background-color: #000;
+	transition: all 1s;
+	opacity: 1;
+	visibility: visible;
+}
+
+.loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	border: 10px solid #fff;
+	border-radius: 50%;
+	border-top-color: red;
+	animation: 2s spin infinite;
+}
+
+.done {
+	opacity: 0;
+	visibility: hidden;
+}
+
+@keyframes spin {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
 }
 
 /* 
