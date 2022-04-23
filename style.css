@@ -1,6 +1,8 @@
 body {
 	margin: 0;
 	background: linear-gradient(#352b29, #025e5b);
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: 'Gabriela', serif;
 }
 
 h1,
@@ -22,14 +24,17 @@ p {
 	margin: 0 auto;
 	text-align: center;
 	box-sizing: border-box;
-	font-size: 40px;
+	font-size: 35px;
 	color: #fff;
 	opacity: 1;
 }
 
-.sceleton {
-	opacity: 0;
-}
+
+/* 
+===========
+	PRELOADER
+=========== 
+*/
 
 .preloader {
 	position: fixed;
@@ -49,12 +54,12 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 80px;
-	height: 80px;
-	border: 10px solid #fff;
-	border-radius: 50%;
-	border-top-color: red;
-	animation: 2s spin infinite;
+	width: 120px;
+	height: 120px;
+	animation: 3s scale infinite;
+}
+.loader img {
+	width: 100%;
 }
 
 .done {
@@ -62,13 +67,12 @@ p {
 	visibility: hidden;
 }
 
-@keyframes spin {
+@keyframes scale {
 	from {
-		transform: translate(-50%, -50%) rotate(0deg);
+		transform: translate(-50%, -50%) scale(0.5);
 	}
-
 	to {
-		transform: translate(-50%, -50%) rotate(360deg);
+		transform: translate(-50%, -50%) scale(1.5);
 	}
 }
 
@@ -156,8 +160,8 @@ p {
 
 .main__text {
 	position: absolute;
-	font-size: 60px;
-	width: 750px;
+	font-size: 52px;
+	width: 850px;
 	z-index: 10;
 	left: 50%;
 	text-align: center;
@@ -259,8 +263,8 @@ p {
 	}
 
 	.main__text {
-		width: calc(280px + (750 - 280) * ((100vw - 320px) / (1080 - 320)));
-		font-size: calc(20px + (60 - 20) * ((100vw - 320px) / (1080 - 320)));
+		width: calc(290px + (850 - 290) * ((100vw - 320px) / (1080 - 320)));
+		font-size: calc(14px + (52 - 14) * ((100vw - 320px) / (1080 - 320)));
 	}
 
 	.header,
@@ -289,7 +293,7 @@ p {
 
 @media (max-width: 880px) {
 	.timer {
-		font-size: 30px;
+		font-size: 28px;
 	}
 
 	.timer__item {
