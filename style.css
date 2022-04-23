@@ -1,7 +1,7 @@
 body {
 	margin: 0;
-	background: linear-gradient(#352b29, #025e5b);
-	/* font-family: 'Montserrat', sans-serif; */
+	/* background: linear-gradient(#352b29, #025e5b); */
+	background: rgb(255, 255, 255);
 	font-family: 'Gabriela', serif;
 }
 
@@ -175,7 +175,7 @@ p {
 }
 
 .main__text-second {
-	bottom: -8%;
+	bottom: -6%;
 	transform: translate(-50%, -50%);
 }
 
@@ -267,16 +267,20 @@ p {
 		font-size: calc(14px + (52 - 14) * ((100vw - 320px) / (1080 - 320)));
 	}
 
+	.main__text-first {
+		font-size: calc(19px + (60 - 19) * ((100vw - 320px) / (1080 - 320)));
+	}
+
+	.main__text-fourth {
+		bottom: calc(135px + (270 - 135) * ((100vw - 320px) / (1080 - 320)));
+	}
+
 	.header,
 	.main,
 	.main__photo,
 	.timer,
 	.main__photo img {
 		width: calc(320px + (1080 - 320) * ((100vw - 320px) / (1080 - 320)));
-	}
-
-	.main__text-fourth {
-		bottom: calc(135px + (270 - 135) * ((100vw - 320px) / (1080 - 320)));
 	}
 }
 
